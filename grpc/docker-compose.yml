@@ -1,0 +1,12 @@
+version: '2'
+services:
+   genericlocalhost:
+      container_name: genericlocalhost
+      build: .
+      expose:
+         - "50052"
+
+   script:
+      build: ../script/
+      links:
+         - genericlocalhost

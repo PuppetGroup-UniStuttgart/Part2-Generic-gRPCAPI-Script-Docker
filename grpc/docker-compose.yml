@@ -10,3 +10,5 @@ services:
       build: ../script/
       links:
          - genericlocalhost
+      volumes_from:
+         - genericlocalhost
